@@ -1,23 +1,32 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <router-view/>
+      <Constructor></Constructor>
   </div>
 </template>
 
 <script>
-export default {
-  name: 'App'
-}
+    import Constructor from './components/Constructor'
+
+    export default {
+        components:{
+            Constructor
+        },
+        name: 'App'
+    }
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+    html, body{
+        margin:0;
+        height:100%;
+        font: 14px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        background-color: #f5f5f5;
+        color: #4D4D57;
+
+    }
+
+    #app{
+        height:100%;
+    }
+
 </style>
