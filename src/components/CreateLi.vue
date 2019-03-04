@@ -34,10 +34,6 @@
             }
         },
 
-        computed:{
-
-        },
-
         methods:{
             classDiv (item) {
                 if (item.id === this.dblClickID) {
